@@ -6,7 +6,6 @@ import Food.Fries;
 import Food.HotDog;
 import LoyaltyStatus.CustomerLoyaltyStatus;
 import Order.BasicOrder;
-import Order.Order;
 import Toppings.FoodItemWithKetchup;
 import Toppings.FoodItemWithOnions;
 import Toppings.FoodItemWithPickles;
@@ -22,7 +21,7 @@ public class RestaurantDriver {
         FoodItem fries2 = new Fries();
         FoodItem fries3 = new FoodItemWithKetchup(new FoodItemWithOnions(new Fries()));
 
-        Order basicOrder = new BasicOrder();
+        BasicOrder basicOrder = new BasicOrder();
         basicOrder.addFoodItem(burger1);
         basicOrder.addFoodItem(burger2);
         basicOrder.addFoodItem(hotdog1);

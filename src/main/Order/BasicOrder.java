@@ -4,15 +4,13 @@ import Food.FoodItem;
 
 import java.util.ArrayList;
 
-public class BasicOrder implements Order {
+public class BasicOrder {
     private final ArrayList<FoodItem> foodItems = new ArrayList<>();
 
-    @Override
     public void addFoodItem (FoodItem foodItem) {
         foodItems.add(foodItem);
     }
 
-    @Override
     public double getTotalOrderCost () {
         double totalCost = 0;
         for (FoodItem foodItem : foodItems)
